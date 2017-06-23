@@ -1,0 +1,16 @@
+@mixin btn-hover($color, $bg, $border){
+  color: $color;
+  background: $bg;
+  border: 1px solid $border;
+
+  &:hover, &:focus{
+    background: $border;
+    color: $bg;
+  }
+
+  &:active{
+    background: rgba($border, 0.8);
+  }
+}
+
+
